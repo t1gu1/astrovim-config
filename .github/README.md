@@ -24,8 +24,10 @@ Go to [AstroNvim](https://github.com/AstroNvim/AstroNvim) to create easily a use
 
 ## key mappings
 
-- AstroVim key mappings: <https://astronvim.com/Basic%20Usage/mappings>
-- Added plugins mapping (soon.)
+- AstroVim key mappings: <https://astronvim.com/Basic%20Usage/mappings> (Not listed in the things below)
+- In the NeoTree press `?` to see all mapping
+- In the editor simply hit `space/leader` and wait 1s to see almost all maping
+- In VIEW mode, `sa` (WITHOUT `<leader>`) make you able to add a surrounding caracter to a highlight word or sentence (Not listed in view mode)
 
 ## 🛠️ Installation
 

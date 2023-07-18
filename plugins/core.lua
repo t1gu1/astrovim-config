@@ -124,6 +124,17 @@ return {
     "NvChad/nvim-colorizer.lua",
     event = "User AstroFile",
   },
+  {
+    "echasnovski/mini.nvim",
+    config = function()
+      require("mini.indentscope").setup()
+      require("mini.move").setup()
+      require("mini.surround").setup()
+      -- sa to add sourroud (visual mode)
+      -- sd to remove sourround (visual or normal mode)
+      -- saiw to add sourround from normal mode
+    end,
+  },
 
   -- By adding to the which-key config and using our helper function you can add more which-key registered bindings
   -- {

@@ -11,7 +11,9 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr) require("astronvim.utils.buffer").close(bufnr) end)
+        require("astronvim.utils.status").heirline.buffer_picker(
+          function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
+        )
       end,
       desc = "Pick to close",
     },
@@ -20,9 +22,27 @@ return {
     ["<leader>b"] = { name = "Buffers" },
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
+    ["<leader>fr"] = {
+      "<cmd>lua require('spectre').open_visual({select_word=true})<CR>",
+      desc = "Search and replace on current file",
+    },
+    ["<leader>fR"] = {
+      "<cmd>lua require('spectre').open_file_search({select_word=true})<CR>",
+      desc = "Search and replace on all files",
+    },
   },
   t = {
+    -- ["sa"] = {
+    --   "<cmd>lua require('mini.surround').setup()<CR>",
+    --   desc = "Sourround",
+    -- },
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+  },
+  v = {
+    ["sa"] = {
+      "<cmd>lua require('mini.surround').setup()<CR>",
+      desc = "Sourround",
+    },
   },
 }

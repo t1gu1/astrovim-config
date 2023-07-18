@@ -22,6 +22,11 @@ Go to [AstroNvim](https://github.com/AstroNvim/AstroNvim) to create easily a use
 
 > <sup id="2">[2]</sup> Note when using default theme: For MacOS, the default terminal does not have true color support. You will need to use [iTerm2](https://iterm2.com/), [Kitty](https://sw.kovidgoyal.net/kitty/), [WezTerm](https://wezfurlong.org/wezterm/), or another [terminal emulator](https://gist.github.com/XVilka/8346728#terminal-emulators) that has true color support.
 
+## key mappings
+
+- AstroVim key mappings: <https://astronvim.com/Basic%20Usage/mappings>
+- Added plugins mapping (soon.)
+
 ## 🛠️ Installation
 
 #### Make a backup of your current nvim and shared folder

@@ -18,7 +18,14 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "astrodark",
+  colorscheme = "catppuccin-macchiato",
+  plugins = {
+    {
+      "catppuccin/nvim",
+      name = "catppuccin",
+      config = function() require("catppuccin").setup {} end,
+    },
+  },
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {

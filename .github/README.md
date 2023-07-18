@@ -52,7 +52,7 @@ nvim
 ##### After a first start
 
 - At the first start everything should install. Then close nvim and reopen it.
-- Then if you want to check if everything is ok use `:cheeckhealth` cmd inside nvim.
+- Then if you want to check if everything is ok use `:checkhealth` cmd inside nvim.
 - P.S. Be sure to use a compatible terminal like kitty terminal and having a nerdFont installed.
 
 ### Customise Kitty terminal a little bit

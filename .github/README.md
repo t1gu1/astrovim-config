@@ -1,6 +1,6 @@
 # AstroNvim User Configuration
 
-Go to [AstroNvim](https://github.com/AstroNvim/AstroNvim) to create easily a user configuration template.
+Go to [AstroNvim](https://github.com/AstroNvim/AstroNvim) to create easily a user configuration template if you don't like this one.
 
 ## ⚡ Requirements
 

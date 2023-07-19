@@ -30,6 +30,10 @@ return {
       "<cmd>lua require('spectre').open_file_search({select_word=true})<CR>",
       desc = "Search and replace on all files",
     },
+    ["dd"] = {
+      '"_dd',
+      desc = "Delete without cutting / replace old buffer",
+    },
   },
   t = {
     -- ["sa"] = {
@@ -38,11 +42,21 @@ return {
     -- },
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+    --
   },
   v = {
     ["sa"] = {
       "<cmd>lua require('mini.surround').setup()<CR>",
       desc = "Sourround",
+    },
+    ["d"] = {
+      '"_d',
+      desc = "Delete without cutting / replace old buffer",
+    },
+
+    ["D"] = {
+      '"_D',
+      desc = "Delete line without cutting / replace old buffer",
     },
   },
 }

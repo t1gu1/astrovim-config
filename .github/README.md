@@ -28,6 +28,19 @@ Go to [AstroNvim](https://github.com/AstroNvim/AstroNvim) to create easily a use
 - In the NeoTree press `?` to see all mapping
 - In the editor simply hit `space/leader` and wait 1s to see almost all maping
 - In VIEW mode, `sa` (WITHOUT `<leader>`) make you able to add a surrounding caracter to a highlight word or sentence (Not listed in view mode)
+- If you want to add Project, open the project window (Accessible through Dashboard too) and then do one of these shorcuts: <https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/project/projectmgr-nvim>
+ - `:ProjectMgr` (or <leader>p) toggles a telescope picker with your projects. The telescope preview displays information about your project and its current git state.
+
+The following actions and keybinds are available for `:ProjectMgr`:
+
+| Key               | Action                                                                                             |
+| :---------------- | :------------------------------------------------------------------------------------------------- |
+| `<CR>`            | Open the project under your cursor                                                                 |
+| `<C-a>`           | Add a project. You will be asked for a name, a path, and optionally startup and shutdown commands. |
+| `<C-d>` / `<C-x>` | Delete project under your cursor                                                                   |
+| `<C-e>` / `<C-u>` | Edit the project under your cursor                                                                 |
+| `<C-q>` / `<ESC>` | Close the window without doing anything                                                            |
+| `<leader>P`       | Open the ProjectMgr panel                                                                          |
 
 ## 🛠️ Installation
 

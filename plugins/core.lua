@@ -17,6 +17,17 @@ return {
         "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
         "    ██   ████   ████   ██ ██      ██",
       }
+
+      local button = require("astronvim.utils").alpha_button
+      opts.section.buttons.val = {
+        button("LDR S l", "  Last Session  "),
+        button("LDR f o", "󰈙  Recents  "),
+        button("LDR f p", "󰈙  Open Project  "),
+        button("LDR n", "  New File"),
+        button("LDR f f", "  Find File  "),
+        button("LDR f w", "󰈭  Find Word  "),
+        button("LDR f '", "  Bookmarks  "),
+      }
       return opts
     end,
   }, -- You can disable default plugins as follows:

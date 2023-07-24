@@ -34,6 +34,11 @@ return {
       '"_dd',
       desc = "Delete without cutting / replace old buffer",
     },
+
+    ["<leader>fp"] = {
+      "<cmd>ProjectMgr<CR>",
+      desc = "Open Project",
+    },
   },
   t = {
     -- ["sa"] = {

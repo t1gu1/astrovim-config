@@ -39,15 +39,32 @@ return {
       "<cmd>ProjectMgr<CR>",
       desc = "Open Project",
     },
+    ["<S-Up>"] = {
+      "<cmd>MoveLine(-1)<CR>",
+      desc = "Move line up",
+    },
+    ["<S-Down>"] = {
+      "<cmd>MoveLine(1)<CR>",
+      desc = "Move line down",
+    },
+    -- Here, i'm not able to overwrite the Default Mappings.
+    ["<S-k>"] = {
+      "<cmd>MoveLine(-1)<CR>",
+      desc = "Move line up",
+    },
+    ["<S-j>"] = {
+      "<cmd>MoveLine(1)<CR>",
+      desc = "Move line down",
+    },
   },
   t = {
-    -- ["sa"] = {
-    --   "<cmd>lua require('mini.surround').setup()<CR>",
-    --   desc = "Sourround",
-    -- },
-    -- setting a mapping to false will disable it
-    -- ["<esc>"] = false,
-    --
+    -- A
+    -- B
+    -- C
+    -- D
+    -- E
+    -- G
+    -- H
   },
   v = {
     ["sa"] = {
@@ -63,5 +80,22 @@ return {
       '"_D',
       desc = "Delete line without cutting / replace old buffer",
     },
+    ["<S-Up>"] = {
+      ":'<,'> MoveBlock(-1)<CR>",
+      desc = "Move block up",
+    },
+    ["<S-Down>"] = {
+      ":'<,'> MoveBlock(1)<CR>",
+      desc = "Move block down",
+    },
+    ["<S-k>"] = {
+      ":'<,'> MoveBlock(-1)<CR>",
+      desc = "Move block up",
+    },
+    ["<S-j>"] = {
+      ":'<,'> MoveBlock(1)<CR>",
+      desc = "Move block down",
+    },
   },
 }
+-- F

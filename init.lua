@@ -59,6 +59,13 @@ return {
     servers = {
       -- "pyright"
     },
+
+    -- Doesn't seems to overwrite lsp mapping
+    mappings = function(mappings)
+      mappings.n["<S-k>"] = false
+
+      return mappings
+    end,
   },
 
   -- Configure require("lazy").setup() options

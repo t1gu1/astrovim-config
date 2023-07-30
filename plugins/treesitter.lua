@@ -14,6 +14,7 @@ return {
       "gitignore",
       "graphql",
       "html",
+      "markdown_inline",
     })
   end,
 }

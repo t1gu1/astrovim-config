@@ -150,7 +150,6 @@ return {
   {
     "fedepujol/move.nvim",
     event = "BufRead",
-    config = function() require("move").setup() end,
   },
 
   -- By adding to the which-key config and using our helper function you can add more which-key registered bindings

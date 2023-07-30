@@ -1,0 +1,72 @@
+priority 100
+
+# Arrow function
+snippet fun
+	const ${1:name} = (${2:params}) => {
+		${3:VISUAL}
+	}
+# Provider
+snippet provider
+	import React, {
+  	FC,
+  	ReactNode,
+  	createContext,
+		useContext,
+ 	 	useState,
+	} from 'react';
+
+	interface ${1:name}ProviderProps {
+  	children: ReactNode;
+	}
+
+	/**
+ 	* @summary - ${3:summary}.
+ 	**/
+	const ${1:name}Provider: FC<PropsWithChildren<${1:name}Props>> = ({
+  	children,
+	}): JSX.Element => {
+		const [state, setState] = useState();
+		${2:VISUAL}
+
+  	return (
+   	 <${1:name}Context.Provider
+   	   	value={{
+    	    state,
+    	  }}
+   	 >
+     	 {children}
+    	</${1:name}Context.Provider>
+  	);
+	};
+
+	interface ${1:name}ContextValue {
+  	state: () => void,
+	}
+
+	const ${1:name}Context = createContext<${1:name}ContextValue>({
+  	state: (_newState) => {},
+	});
+
+	export { ${1:name}ContextValue, ${1:name}Context };
+	export default ${1:name}Provider;
+snippet comp
+	import React, { FC, ReactNode } from 'react';
+
+	interface ${1:name}Props {
+  	children: ReactNode;
+	}
+
+	const ${1:name}: FC<${1:name}Props> = ({
+	  children,
+	}: ${1:name}Props) => {
+
+		${2:VISUAL}
+
+		return (
+			<>
+				{children}
+			</>
+		);
+	};
+
+	export {${1:name}}

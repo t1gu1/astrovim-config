@@ -193,6 +193,22 @@ return {
     "fedepujol/move.nvim",
     event = "BufRead",
   },
+  {
+    "dcampos/nvim-snippy",
+    config = function()
+      require("snippy").setup {
+        mappings = {
+          is = {
+            ["<Tab>"] = "expand_or_advance",
+            -- ['<S-Tab>'] = 'previous',
+          },
+          nx = {
+            ["<leader>x"] = "cut_text",
+          },
+        },
+      }
+    end,
+  },
 
   -- By adding to the which-key config and using our helper function you can add more which-key registered bindings
   -- {

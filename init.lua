@@ -20,10 +20,24 @@ return {
   -- Set colorscheme to use
   colorscheme = "catppuccin-macchiato",
   plugins = {
-    {
-      "catppuccin/nvim",
-      name = "catppuccin",
-    },
+    -- { -- further customize the options set by the community
+    --   "catppuccin/nvim",
+    --   optional = true,
+    --   opts = {
+    --     integrations = {
+    --       sandwich = false,
+    --       noice = true,
+    --       mini = true,
+    --       leap = true,
+    --       markdown = true,
+    --       neotest = true,
+    --       cmp = true,
+    --       overseer = true,
+    --       lsp_trouble = true,
+    --       rainbow_delimiters = true,
+    --     },
+    --   },
+    -- },
   },
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on

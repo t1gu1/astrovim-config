@@ -48,16 +48,24 @@ return {
       desc = "Move line down",
     },
     -- Here, i'm not able to overwrite the Default Mappings.
-    ["<S-k>"] = {
+    ["K"] = {
       "<cmd>MoveLine(-1)<CR>",
       desc = "Move line up",
     },
-    ["<S-j>"] = {
+    ["J"] = {
       "<cmd>MoveLine(1)<CR>",
       desc = "Move line down",
     },
+    ["<C-t>"] = {
+      "<cmd>ToggleTerm<CR>",
+      desc = "Toggle Terminal",
+    },
   },
   t = {
+    ["<C-t>"] = {
+      "<cmd>ToggleTerm<CR>",
+      desc = "Toggle Terminal",
+    },
     -- A
     -- B
     -- C

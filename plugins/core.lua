@@ -183,7 +183,6 @@ return {
     config = function()
       require("mini.indentscope").setup()
       require("mini.move").setup()
-      -- require("mini.surround").setup()
       -- sa to add sourroud (visual mode)
       -- sd to remove sourround (visual or normal mode)
       -- saiw to add sourround from normal mode

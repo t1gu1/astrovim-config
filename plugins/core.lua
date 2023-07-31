@@ -183,11 +183,17 @@ return {
     config = function()
       require("mini.indentscope").setup()
       require("mini.move").setup()
-      require("mini.surround").setup()
+      -- require("mini.surround").setup()
       -- sa to add sourroud (visual mode)
       -- sd to remove sourround (visual or normal mode)
       -- saiw to add sourround from normal mode
     end,
+  },
+  {
+    "kylechui/nvim-surround",
+    version = "*", -- Use for stability; omit to use `main` branch for the latest features
+    event = "VeryLazy",
+    config = function() require("nvim-surround").setup() end,
   },
   {
     "fedepujol/move.nvim",

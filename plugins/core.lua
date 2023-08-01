@@ -113,7 +113,13 @@ return {
     event = "BufRead",
     config = function()
       require("spectre").setup {
+        -- Have to keep it up to date.. (Is there a way to only overite "send_to_qf")
         mapping = {
+          ["send_to_qf"] = {
+            map = "<C-'>",
+            cmd = "<cmd>lua require('spectre.actions').send_to_qf()<CR>",
+            desc = "send all items to quickfix",
+          },
           ["toggle_line"] = {
             map = "dd",
             cmd = "<cmd>lua require('spectre').toggle_line()<CR>",
@@ -123,11 +129,6 @@ return {
             map = "<cr>",
             cmd = "<cmd>lua require('spectre.actions').select_entry()<CR>",
             desc = "open file",
-          },
-          ["send_to_qf"] = {
-            map = "<C-'>",
-            cmd = "<cmd>lua require('spectre.actions').send_to_qf()<CR>",
-            desc = "send all items to quickfix",
           },
           ["replace_cmd"] = {
             map = "<leader>c",

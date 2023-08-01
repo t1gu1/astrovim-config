@@ -113,6 +113,15 @@ return {
     event = "BufRead",
     config = function()
       require("spectre").setup {
+        -- default = {
+        --   find = {
+        --     cmd = "rg",
+        --     options = {},
+        --   },
+        --   replace = {
+        --     cmd = "sed",
+        --   },
+        -- },
         -- Have to keep it up to date.. (Is there a way to only overite "send_to_qf")
         mapping = {
           ["send_to_qf"] = {

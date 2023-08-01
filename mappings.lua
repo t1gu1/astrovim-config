@@ -23,12 +23,12 @@ return {
     -- quick save
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     ["<leader>fr"] = {
-      "<cmd>lua require('spectre').open_visual({select_word=true})<CR>",
-      desc = "Search and replace on current file",
+      "<cmd>lua require('spectre').open_visual({select_word=true, path='!shared/**'})<CR>",
+      desc = "Search and replace on all files",
     },
     ["<leader>fR"] = {
       "<cmd>lua require('spectre').open_file_search({select_word=true})<CR>",
-      desc = "Search and replace on all files",
+      desc = "Search and replace on current file",
     },
     ["dd"] = {
       '"_dd',

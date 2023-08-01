@@ -60,11 +60,23 @@ return {
       "<cmd>ToggleTerm<CR>",
       desc = "Toggle Terminal",
     },
+    ["<leader>t<leader>"] = {
+      "<cmd>ToggleTerm<CR>",
+      desc = "Toggle Terminal",
+    },
+    ["<leader>s"] = {
+      "<cmd>e $MYVIMRC | :cd %:p:h/lua/user/ | wincmd k | pwd | Neotree<CR>",
+      desc = "Open AstroVim User Config",
+    },
   },
   t = {
     ["<C-t>"] = {
       "<cmd>ToggleTerm<CR>",
       desc = "Toggle Terminal",
+    },
+    ["<Esc>"] = {
+      "<C-\\><C-n>",
+      desc = "Terminal Normal nvim mode",
     },
     -- A
     -- B

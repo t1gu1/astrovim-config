@@ -63,16 +63,13 @@ return {
       local button = require("astronvim.utils").alpha_button
       opts.section.buttons.val = {
         button("LDR S l", "  Last Session  "),
-        button("LDR S f", "󰈙  Find Recent sessions"),
-        button("LDR f p", "󰈙  Open Project  "),
-        button("LDR n  ", "  New File   "),
-        button("LDR f f", "  Find File  "),
-        button("LDR f w", "󰈭  Find Word  "),
-        button("LDR f '", "  Bookmarks  "),
+        button("LDR S f", "  Find Recent sessions"),
+        button("LDR f p", "  Open Project  "),
+        button("LDR s", "  Settings  "),
       }
       return opts
     end,
-  }, -- You can disable default plugins as follows:
+  }, -- You can disable defaut plugins as follows:
   -- { "max397574/better-escape.nvim", enabled = false },
   --
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call

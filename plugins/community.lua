@@ -125,6 +125,7 @@ return {
       },
     },
   },
+  -- { "AckslD/muren.nvim", event = "VeryLazy", config = true },
   -- Nice but too much buggy
   -- {
   --   -- "giusgad/pets.nvim", --vOriginal waiting for my PR to be merged: https://github.com/giusgad/pets.nvim/pull/37

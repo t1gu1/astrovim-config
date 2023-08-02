@@ -2,6 +2,8 @@
 
 Go to [AstroNvim](https://github.com/AstroNvim/AstroNvim) to create easily a user configuration template if you don't like this one.
 
+![image](https://github.com/t1gu1/astrovim-config/assets/12479055/900ee6a8-7973-4b3c-9e00-c5c7f0bb796c)
+
 ## ⚡ Requirements
 
 - [Nerd Fonts](https://www.nerdfonts.com/font-downloads) (_Optional with manual intervention:_ See [Documentation on customizing icons](https://astronvim.com/Recipes/icons)) <sup>[[1]](#1)</sup>

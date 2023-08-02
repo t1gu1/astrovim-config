@@ -76,6 +76,10 @@ return {
       "<cmd>bnext<CR>",
       desc = "Go to next buffer",
     },
+    ["<Esc>"] = {
+      "<C-\\><C-n>",
+      desc = "Normal Vim Mode",
+    },
   },
   t = {
     ["<C-t>"] = {
@@ -84,7 +88,7 @@ return {
     },
     ["<Esc>"] = {
       "<C-\\><C-n>",
-      desc = "Terminal Normal nvim mode",
+      desc = "Terminal Normal Vim Mode",
     },
     -- A
     -- B

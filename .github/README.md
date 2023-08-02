@@ -2,7 +2,7 @@
 
 Go to [AstroNvim](https://github.com/AstroNvim/AstroNvim) to create easily a user configuration template if you don't like this one.
 
-![image](https://github.com/t1gu1/astrovim-config/assets/12479055/900ee6a8-7973-4b3c-9e00-c5c7f0bb796c)
+![image](https://github.com/t1gu1/astrovim-config/assets/12479055/4ecf7714-2b1f-47ca-9e3f-5a34796a89aa)
 
 ## ⚡ Requirements
 

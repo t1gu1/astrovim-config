@@ -68,6 +68,14 @@ return {
       "<cmd>e $MYVIMRC | :cd %:p:h/lua/user/ | wincmd k | pwd | Neotree<CR>",
       desc = "Open AstroVim User Config",
     },
+    ["<C-[>"] = {
+      "<cmd>bprev<CR>",
+      desc = "Go to previous buffer",
+    },
+    ["<C-]>"] = {
+      "<cmd>bnext<CR>",
+      desc = "Go to next buffer",
+    },
   },
   t = {
     ["<C-t>"] = {
@@ -118,4 +126,3 @@ return {
     },
   },
 }
--- F

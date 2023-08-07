@@ -128,12 +128,13 @@ return {
   {
     "bennypowers/nvim-regexplainer",
     event = "VeryLazy",
-    config = function() require("regexplainer").setup() end,
+    config = function() require("regexplainer").setup { auto = true } end,
     requires = {
       "nvim-treesitter/nvim-treesitter",
       "MunifTanjim/nui.nvim",
     },
   },
+  -- { "Djancyp/regex.nvim", event = "VeryLazy", config = function() require("regex-nvim").setup { auto = true } end },
 
   -- Nice but too much buggy (I think it run more nicely on linux)
   -- {

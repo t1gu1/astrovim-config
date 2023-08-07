@@ -37,8 +37,9 @@
 - - To detail more, `y` then `s` follow by the manip to go to the end of the for and the caracter to add for the sourround. Example: `yss(` -> sourround the line with `()`. `ysw"` sourround the word with `"`. `ys4j{` => sourround the four line with `{`
 
 ### Harpoon (Quick navigation between marked file)
-- `harpoon` `<leader><leader>a` to mark a file. Use number 1 to 4 to quick move between the 4 first marks.
-- 
+- `harpoon` `<leader><leader>a` to mark a file. 
+- Use numbers `1` **to** `4` to quick move between the 4 first marks.
+  
 ### Project
 - Simply `enter` on the Open project in the Dashboard. (Will be empty,  but you will be able to execute commands listed in the table below)
 - `:ProjectMgr` (or <leader>p) toggles a telescope picker with your projects. The telescope preview displays information about your project and its current git state.

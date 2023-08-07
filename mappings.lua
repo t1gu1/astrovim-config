@@ -34,7 +34,10 @@ return {
       '"_dd',
       desc = "Delete without cutting / replace old buffer",
     },
-
+    ["<leader>r"] = {
+      "<cmd>RegexplainerToggle<CR>",
+      desc = "Regex explainer",
+    },
     ["<leader>fp"] = {
       "<cmd>ProjectMgr<CR>",
       desc = "Open Project",

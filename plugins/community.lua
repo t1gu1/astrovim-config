@@ -125,6 +125,15 @@ return {
       },
     },
   },
+  {
+    "bennypowers/nvim-regexplainer",
+    event = "VeryLazy",
+    config = function() require("regexplainer").setup() end,
+    requires = {
+      "nvim-treesitter/nvim-treesitter",
+      "MunifTanjim/nui.nvim",
+    },
+  },
 
   -- Nice but too much buggy (I think it run more nicely on linux)
   -- {

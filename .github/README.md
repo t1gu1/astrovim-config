@@ -1,6 +1,4 @@
-# AstroNvim User Configuration
-
-Go to [AstroNvim](https://github.com/AstroNvim/AstroNvim) to create easily a user configuration template if you don't like this one.
+# My AstroNvim User Configuration for React, Typescipt || Javascript
 
 ![image](https://github.com/t1gu1/astrovim-config/assets/12479055/4ecf7714-2b1f-47ca-9e3f-5a34796a89aa)
 
@@ -26,16 +24,26 @@ Go to [AstroNvim](https://github.com/AstroNvim/AstroNvim) to create easily a use
 
 ## key mappings
 
+### The basic
+
 - AstroVim key mappings: <https://astronvim.com/Basic%20Usage/mappings> (Not listed in the things below)
 - In the NeoTree press `?` to see all mapping
 - In the editor simply hit `space/leader` and wait 1s to see almost all maping
-- In VIEW mode, `sa` (WITHOUT `<leader>`) make you able to add a surrounding caracter to a highlight word or sentence (Not listed in view mode)
 - If you want to add Project, open the project window (Accessible through Dashboard too) and then do one of these shorcuts: <https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/project/projectmgr-nvim>
+
+### Sourround
 - If you want to Add, Change of delete surrounding, (<https://github.com/kylechui/nvim-surround>)
-- In normal mode, Add: `yss"` will surround a word with `"`, `ds"` will remove `"` and `cs"'` will replace `"` by `'`.
+- In normal mode (WITHOUT `<leader>`), Add: `yss"` will surround a word with `"`, `ds"` will remove `"` and `cs"'` will replace `"` by `'`.
+- - To detail more, `y` then `s` follow by the manip to go to the end of the for and the caracter to add for the sourround. Example: `yss(` -> sourround the line with `()`. `ysw"` sourround the word with `"`. `ys4j{` => sourround the four line with `{`
+
+### Harpoon (Quick navigation between marked file)
+- `harpoon` `<leader><leader>a` to mark a file. Use number 1 to 4 to quick move between the 4 first marks.
+- 
+### Project
+- Simply `enter` on the Open project in the Dashboard. (Will be empty,  but you will be able to execute commands listed in the table below)
 - `:ProjectMgr` (or <leader>p) toggles a telescope picker with your projects. The telescope preview displays information about your project and its current git state.
 
-The following actions and keybinds are available for `:ProjectMgr`:
+The following actions and keybinds are available for `:ProjectMgr` / In the `Open project` option in the Dashboard:
 
 | Key               | Action                                                                                             |
 | :---------------- | :------------------------------------------------------------------------------------------------- |

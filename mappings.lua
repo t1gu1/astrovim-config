@@ -17,9 +17,9 @@ return {
       end,
       desc = "Pick to close",
     },
-    ["<leader>st"] = {
-      "<cmd>Codi<CR>",
-      desc = "Create a test temporary session to dev test with preview",
+    ["<leader>St"] = {
+      "<cmd>CodiNew javascript<CR>",
+      desc = "Create a JSBin like with inline preview",
     },
     -- tables with the `name` key will be registered with which-key if it's installed
     -- this is useful for naming menus
@@ -43,8 +43,8 @@ return {
       desc = "Regex explainer",
     },
     ["<leader>fp"] = {
-      "<cmd>ProjectMgr<CR>",
-      desc = "Open Project",
+      "<cmd>Telescope projects<CR>",
+      desc = "Open Projects",
     },
     ["<S-Up>"] = {
       "<cmd>MoveLine(-1)<CR>",

@@ -70,6 +70,25 @@ return {
       return opts
     end,
   },
+
+  {
+    "nvim-telescope/telescope.nvim",
+    optional = true,
+    dependencies = { -- add a new dependency to telescope that is our new plugin
+      "project_nvim",
+    },
+    -- the first parameter is the plugin specification
+    -- the second is the table of options as set up in Lazy with the `opts` key
+    config = function(plugin, opts)
+      -- run the core AstroNvim configuration function with the options table
+      require "plugins.configs.telescope"(plugin, opts)
+
+      -- require telescope and load extensions as necessary
+      local telescope = require "telescope"
+      telescope.load_extension "projects"
+    end,
+  },
+
   {
     "nvim-pack/nvim-spectre",
     event = "BufRead",
@@ -179,7 +198,7 @@ return {
     config = function() require("lsp_signature").setup() end,
   },
   { "andweeb/presence.nvim" },
-  { "metakirby5/codi.vim", cmd = "Codi" }, -- Nice to sandbox some tests (Like JSBin but local with live preview)
+  { "metakirby5/codi.vim", cmd = "Codi", event = "VeryLazy" }, -- Nice to sandbox some tests (Like JSBin but local with live preview)
   {
     "folke/todo-comments.nvim",
     event = "BufRead",

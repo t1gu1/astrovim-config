@@ -1,6 +1,23 @@
-# My AstroNvim User Configuration for React, Typescipt || Javascript
+# My AstroNvim User Configuration for React, Typescipt || Javascript | The Real Catppucin theme
 
 ![image](https://github.com/t1gu1/astrovim-config/assets/12479055/4ecf7714-2b1f-47ca-9e3f-5a34796a89aa)
+![image](https://github.com/t1gu1/astrovim-config/assets/12479055/a4a02c23-1263-4dca-be9d-65439be60a1b)
+![image](https://github.com/t1gu1/astrovim-config/assets/12479055/3a09fafe-f43d-4da0-adb8-34a578c71993)
+
+## Features / What I added or change from AstroVim
+
+- dashboard ajusted to be and look really simple
+- neo-tree open to the right, so it don't move the code when open/close
+- nvChad Telescope theme ajusted to fit with the cappuccin colors
+- noice.nvim, to have the styled search and Commands Bar
+- The `Esc` in the terminal will get you in view mode!
+- I DISABLED nvim-notify, cause it was simply frustrating to have a useless notification hidding my code / wordspace
+- project.nvim to manage projects
+- move.nvim to be able to move block of code (Remove LSP K map to be able to shift + k to move block.) Works with arrows to.
+- ThePrimeagen/harpoon cause it's blazingly fast
+- nvim-spectre for a nice search and replace
+- Other plugins: rainbow-delimiter, git-blame, todo-comments
+- I add and chage some keymap (There is a point explaining the keymaps from this config under). You can also check the `mapping` file
 
 ## ⚡ Requirements
 
@@ -30,6 +47,10 @@
 - In the NeoTree press `?` to see all mapping
 - In the editor simply hit `space/leader` and wait 1s to see almost all maping
 - If you want to add Project, open the project window (Accessible through Dashboard too) and then do one of these shorcuts: <https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/project/projectmgr-nvim>
+
+### Terminal
+- The `Esc` in the terminal will get you in view mode!
+- `<Leader>t<Leader>` or `ctrl-t` will toogle terminal. 
 
 ### Sourround
 - If you want to Add, Change of delete surrounding, (<https://github.com/kylechui/nvim-surround>)

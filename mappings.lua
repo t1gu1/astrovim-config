@@ -11,25 +11,6 @@ return function(mappings)
         "<cmd>ToggleTerm<CR>",
         desc = "Toggle Terminal",
       },
-      -- Remap all terminal commands
-      ["<leader>Th"] = mappings.n["<leader>th"],
-      ["<leader>Tf"] = mappings.n["<leader>tf"],
-      ["<leader>Tv"] = mappings.n["<leader>tv"],
-      ["<leader>Tl"] = mappings.n["<leader>tl"],
-      ["<leader>Tn"] = mappings.n["<leader>tn"],
-      ["<leader>Tp"] = mappings.n["<leader>tp"],
-      ["<leader>Tt"] = mappings.n["<leader>tt"],
-
-      -- Disabled old terminal commands
-      ["<leader>th"] = false,
-      ["<leader>tf"] = false,
-      ["<leader>tv"] = false,
-      ["<leader>tl"] = false,
-      ["<leader>tn"] = false,
-      ["<leader>tp"] = false,
-      ["<leader>tt"] = false,
-
-      ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
       ["<leader>bD"] = {
         function()
           require("astronvim.utils.status").heirline.buffer_picker(
@@ -147,6 +128,16 @@ return function(mappings)
       },
     },
   }
+
+  -- Disable old terminal command
+  -- Keep the new "<leader>t" to toggle terminal
+  for key, val in pairs(mappings.n) do
+    if key:find "<leader>t" and key ~= "<leader>t" then
+      local new_key = key:gsub("<leader>t", "<leader>T")
+      new_mapping.n[new_key] = val
+      new_mapping.n[key] = false
+    end
+  end
 
   -- Merge old mappings with the new mappings
   for _k, mode in pairs { "n", "t", "v" } do

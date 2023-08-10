@@ -153,13 +153,6 @@ return function(mappings)
     for key, val in pairs(new_mapping.n) do
       mappings[mode][key] = val
     end
-
-  for key, val in pairs(new_mapping.v) do
-    mappings.v[key] = val
-  end
-
-  for key, val in pairs(new_mapping.t) do
-    mappings.t[key] = val
   end
 
   return mappings

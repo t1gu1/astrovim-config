@@ -72,22 +72,12 @@ return {
   },
 
   {
-    "nvim-telescope/telescope.nvim",
-    optional = true,
-    dependencies = { -- add a new dependency to telescope that is our new plugin
-      "project_nvim",
+    "nvim-neo-tree/neo-tree.nvim",
+    opts = {
+      window = { position = "right", width = 43 },
     },
-    -- the first parameter is the plugin specification
-    -- the second is the table of options as set up in Lazy with the `opts` key
-    config = function(plugin, opts)
-      -- run the core AstroNvim configuration function with the options table
-      require "plugins.configs.telescope"(plugin, opts)
-
-      -- require telescope and load extensions as necessary
-      local telescope = require "telescope"
-      telescope.load_extension "projects"
-    end,
   },
+  { "nvim-notify", enabled = false },
 
   {
     "nvim-pack/nvim-spectre",

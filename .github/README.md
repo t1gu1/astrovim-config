@@ -1,6 +1,6 @@
 # The Real Catppuccin - AstroNvim User Configuration for React, Typescipt || Javascript
 
-![image](https://github.com/t1gu1/astrovim-config/assets/12479055/1c0d1995-fc3f-423a-8e16-97416adcc0e7)
+![image](https://github.com/t1gu1/astrovim-config/assets/12479055/bf213f82-8e93-472d-baf5-f10e50803c95)
 ![image](https://github.com/t1gu1/astrovim-config/assets/12479055/a4a02c23-1263-4dca-be9d-65439be60a1b)
 ![image](https://github.com/t1gu1/astrovim-config/assets/12479055/3a09fafe-f43d-4da0-adb8-34a578c71993)
 

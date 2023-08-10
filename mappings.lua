@@ -141,7 +141,7 @@ return function(mappings)
 
   -- Merge old mappings with the new mappings
   for _k, mode in pairs { "n", "t", "v" } do
-    for key, val in pairs(new_mapping.n) do
+    for key, val in pairs(new_mapping[mode]) do
       mappings[mode][key] = val
     end
   end

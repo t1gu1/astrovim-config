@@ -1,6 +1,8 @@
 # The Real Catppuccin - AstroNvim User Configuration for React, Typescipt || Javascript
 
 ![image](https://github.com/t1gu1/astrovim-config/assets/12479055/bf213f82-8e93-472d-baf5-f10e50803c95)
+
+P.S. Bufferline/Heirline are now removed to get the fully `ThePrimeagen/harpoon` experience.
 ![image](https://github.com/t1gu1/astrovim-config/assets/12479055/a4a02c23-1263-4dca-be9d-65439be60a1b)
 ![image](https://github.com/t1gu1/astrovim-config/assets/12479055/3a09fafe-f43d-4da0-adb8-34a578c71993)
 
@@ -15,6 +17,7 @@
 - project.nvim to manage projects
 - move.nvim to be able to move block of code (Remove LSP K map to be able to shift + k to move block.) Works with arrows to.
 - ThePrimeagen/harpoon cause it's blazingly fast
+- I REMOVE completly the buffeline/Heirline to truly use ThePrimeagen/harpoon experience
 - nvim-spectre for a nice search and replace
 - Other plugins: rainbow-delimiter, git-blame, todo-comments
 - I add and chage some keymap (There is a point explaining the keymaps from this config under). You can also check the `mapping` file
@@ -60,6 +63,11 @@
 ### Harpoon (Quick navigation between marked file)
 - `harpoon` `<leader><leader>a` to mark a file. 
 - Use numbers `1` **to** `4` to quick move between the 4 first marks.
+
+Here an example of what it looks:
+![image](https://github.com/t1gu1/astrovim-config/assets/12479055/db602e66-6df3-4eea-a894-fd1ad3f025f9)
+
+P.S. I REMOVE completly the buffeline/Heirline to fully use `ThePrimeagen/harpoo` experience.
   
 ### Project
 - Simply `enter` on the Open project in the Dashboard. (Will be empty,  but you will be able to execute commands listed in the table below)

@@ -52,25 +52,29 @@ P.S. Bufferline/Heirline are now removed to get the fully `ThePrimeagen/harpoon`
 - If you want to add Project, open the project window (Accessible through Dashboard too) and then do one of these shorcuts: <https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/project/projectmgr-nvim>
 
 ### Terminal
+
 - The `Esc` in the terminal will get you in view mode!
-- `<Leader>t<Leader>` or `ctrl-t` will toogle terminal. 
+- `<Leader>t<Leader>` or `ctrl-t` will toogle terminal.
 
 ### Sourround
+
 - If you want to Add, Change of delete surrounding, (<https://github.com/kylechui/nvim-surround>)
 - In normal mode (WITHOUT `<leader>`), Add: `yss"` will surround a word with `"`, `ds"` will remove `"` and `cs"'` will replace `"` by `'`.
-- - To detail more, `y` then `s` follow by the manip to go to the end of the for and the caracter to add for the sourround. Example: `yss(` -> sourround the line with `()`. `ysw"` sourround the word with `"`. `ys4j{` => sourround the four line with `{`
+    - - To detail more, `y` then `s` follow by the manip to go to the end of the for and the caracter to add for the sourround. Example: `yss(` -> sourround the line with `()`. `ysw"` sourround the word with `"`. `ys4j{` => sourround the four line with `{`
 
 ### Harpoon (Quick navigation between marked file)
-- `harpoon` `<leader><leader>a` to mark a file. 
-- Use numbers `1` **to** `4` to quick move between the 4 first marks.
+
+- `harpoon` `<leader><leader>a` to mark a file.
+- Use `<leader>` follow by a number (`1` **to** `5`) to quick move between the 5 first marks.
 
 Here an example of what it looks:
 ![image](https://github.com/t1gu1/astrovim-config/assets/12479055/db602e66-6df3-4eea-a894-fd1ad3f025f9)
 
 P.S. I REMOVE completly the buffeline/Heirline to fully use `ThePrimeagen/harpoo` experience.
-  
+
 ### Project
-- Simply `enter` on the Open project in the Dashboard. (Will be empty,  but you will be able to execute commands listed in the table below)
+
+- Simply `enter` on the Open project in the Dashboard. (Will be empty, but you will be able to execute commands listed in the table below)
 - `:ProjectMgr` (or <leader>p) toggles a telescope picker with your projects. The telescope preview displays information about your project and its current git state.
 
 The following actions and keybinds are available for `:ProjectMgr` / In the `Open project` option in the Dashboard:
@@ -159,21 +163,5 @@ removed_margin_bg    #744D5F
 
 # 30% green, 70% base
 added_bg             #4B5D55
-# 50% green, 50% base
-highlight_added_bg   #658168
-# 40% green, 60% base
-added_margin_bg      #586F5E
-
-# mantle
-hunk_margin_bg       #1E2030
-hunk_bg              #1E2030
-
-# 40% yellow, 60% base
-search_bg            #EED49F
-# text
-search_fg            #CAD3F5
-# 30% sky, 70% base
-select_bg            #445B6C
-# text
-select_fg            #CAD3F5
+# 50% green, 50%
 ```

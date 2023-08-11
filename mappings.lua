@@ -8,7 +8,7 @@ return function(mappings)
     -- first key is the mode
     n = {
       ["<leader>t"] = {
-        "<cmd>ToggleTerm<CR>",
+        '<cmd>exe v:count1 . "ToggleTerm"<CR>',
         desc = "Toggle Terminal",
       },
       ["<leader>bD"] = {

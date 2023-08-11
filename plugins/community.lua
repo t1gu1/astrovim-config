@@ -108,12 +108,12 @@ return {
       {
         prefix .. "t",
         function()
-          vim.ui.input({ prompt = term_string .. " window number: " }, function(input)
+          vim.ui.input({ prompt = term_string .. "Tmux window number: " }, function(input)
             local num = tonumber(input)
             if num then require("harpoon." .. term_string).gotoTerminal(num) end
           end)
         end,
-        desc = "Go to " .. term_string .. " window",
+        desc = "Go to Tmux" .. term_string .. " window",
       },
     },
   },

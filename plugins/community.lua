@@ -102,7 +102,8 @@ return {
       { "<leader>2", function() require("harpoon.ui").nav_file(2) end, desc = "Goto mark 2" },
       { "<leader>3", function() require("harpoon.ui").nav_file(3) end, desc = "Goto mark 3" },
       { "<leader>4", function() require("harpoon.ui").nav_file(4) end, desc = "Goto mark 4" },
-      { "<leader>5", function() require("harpoon.ui").nav_file(4) end, desc = "Goto mark 5" },
+      { "<leader>5", function() require("harpoon.ui").nav_file(5) end, desc = "Goto mark 5" },
+      { "<leader>6", function() require("harpoon.ui").nav_file(6) end, desc = "Goto mark 6" },
       { prefix .. "m", "<cmd>Telescope harpoon marks<CR>", desc = "Show marks in Telescope" },
       {
         prefix .. "t",

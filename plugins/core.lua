@@ -10,7 +10,7 @@ return {
     "goolord/alpha-nvim",
     opts = function(_, opts)
       -- dashboard-images.lua contains few "ASCII" images that you can change
-      opts.section.header.val = require("../dashboard-images").cutty_cat
+      opts.section.header.val = require("user/dashboard-images").cutty_cat
 
       local button = require("astronvim.utils").alpha_button
       opts.section.buttons.val = {

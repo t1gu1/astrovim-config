@@ -24,7 +24,7 @@ return {
     "noice.nvim",
     opts = function(_, opts)
       opts.presets.bottom_search = false
-      opts.lsp.signature = { enabled = false } -- Here I create a PR to fix that: https://github.com/AstroNvim/astrocommunity/pull/518
+      opts.lsp.signature = { enabled = false }
       return opts
     end,
   },

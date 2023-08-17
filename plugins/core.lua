@@ -3,6 +3,8 @@ return {
   -- Disable Core plugins
   { "nvim-notify", enabled = false },
   { "heirline.nvim", enabled = false },
+  { "neovim-session-manager", enabled = false },
+  { "resession.nvim", enabled = false },
 
   -- Extend Core plugins
   -- Dashboard (With custom image used from dashboard-images.lua)
@@ -14,8 +16,6 @@ return {
 
       local button = require("astronvim.utils").alpha_button
       opts.section.buttons.val = {
-        button("LDR S l", "  Last Session  "),
-        button("LDR S f", "  Find Recent sessions"),
         button("LDR f p", "  Open Project  "),
         button("LDR s", "  Settings  "),
       }

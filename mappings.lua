@@ -127,6 +127,14 @@ return function(mappings)
         '"_D',
         desc = "Delete line without cutting / replace old buffer",
       },
+      ["p"] = {
+        '"_dP',
+        desc = "Paste without replacing your buffer",
+      },
+      ["P"] = {
+        '"_dP',
+        desc = "Paste without replacing your buffer",
+      },
       ["<S-Up>"] = {
         ":'<,'> MoveBlock(-1)<CR>",
         desc = "Move block up",

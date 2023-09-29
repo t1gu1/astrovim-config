@@ -49,24 +49,18 @@ snippet provider
 
 	export { ${1:name}ContextValue, ${1:name}Context };
 	export default ${1:name}Provider;
+
 snippet comp
-	import React, { FC, ReactNode } from 'react';
+	import React, { FC } from 'react';
+	import { View } from 'react-native';
+	import styled from 'styled-components/native';
 
-	interface ${1:name}Props {
-  	children: ReactNode;
-	}
-
-	const ${1:name}: FC<${1:name}Props> = ({
-	  children,
-	}: ${1:name}Props) => {
-
-		${2:VISUAL}
-
-		return (
-			<>
-				{children}
-			</>
-		);
+	const ${1:name}: FC = () => {
+ 		console.log('test');
+  	return <Container></Container>;
 	};
 
-	export {${1:name}}
+	const Container = styled(View)``;
+
+	export { ${1:name} };
+

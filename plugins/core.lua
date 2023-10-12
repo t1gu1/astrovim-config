@@ -5,6 +5,7 @@ return {
   { "heirline.nvim", enabled = false },
   { "neovim-session-manager", enabled = false },
   { "resession.nvim", enabled = false },
+  { "nvim-ufo", enabled = false },
 
   -- Extend Core plugins
   -- Dashboard (With custom image used from dashboard-images.lua)

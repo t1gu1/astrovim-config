@@ -1,5 +1,7 @@
 # The Real Catppuccin - AstroNvim User Configuration for React, Typescipt || Javascript
 
+P.S. My terminal is now transparent with the last Kitty config. (I dont test it without transparent terminal)
+
 ![image](https://github.com/t1gu1/astrovim-config/assets/12479055/bf213f82-8e93-472d-baf5-f10e50803c95)
 
 P.S. Bufferline/Heirline are now removed to get the fully `ThePrimeagen/harpoon` experience.
@@ -135,6 +137,13 @@ Simply replace all your config by this:
 
 ```shell
 ## blurb:    Soothing pastel theme for the high-spirited!
+
+# Remove window header of your OS (You may not want this line)
+hide_window_decorations titlebar-only
+
+# Make the terminal transparent with some blur (Works nicely on Mac OS and maybe Linux)
+background_opacity 0.8
+background_blur 20
 
 font_size       19.0
 

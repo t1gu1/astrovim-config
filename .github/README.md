@@ -11,7 +11,8 @@ P.S. Bufferline/Heirline are now removed to get the fully `ThePrimeagen/harpoon`
 ## Features / What I added or change from AstroVim
 
 - dashboard ajusted to be and look really simple
-- neo-tree open to the right, so it don't move the code when open/close
+- ~~neo-tree open to the right, so it don't move the code when open/close~~
+- Use Oli.nvim file explorer (Edit file like a buffer & it's clean!)
 - nvChad Telescope theme ajusted to fit with the cappuccin colors
 - noice.nvim, to have the styled search and Commands Bar
 - The `Esc` in the terminal will get you in view mode!
@@ -49,7 +50,12 @@ P.S. Bufferline/Heirline are now removed to get the fully `ThePrimeagen/harpoon`
 ### The basic
 
 - AstroVim key mappings: <https://astronvim.com/Basic%20Usage/mappings> (Not listed in the things below)
-- In the NeoTree press `?` to see all mapping
+- ~~In the NeoTree press `?` to see all mapping~~
+- In Oil, press `?` to see all mapping (Not that much cause it works like buffer)
+  - `<leader>e` open current file directory
+  - `<leader>E` open root project (Be sure to have .git or something that project.nvim will be able to understand as project)
+  - To move a file simply delete the file and paste it somewhere else. Then save in oil and it will tell you if you really want to move the file. (Really intuitive)
+  - To edit a file name, simply edit it as a buffer then save in oil. Oil will ask if you really want to rename your file.
 - In the editor simply hit `space/leader` and wait 1s to see almost all maping
 - If you want to add Project, open the project window (Accessible through Dashboard too) and then do one of these shorcuts: <https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/project/projectmgr-nvim>
 

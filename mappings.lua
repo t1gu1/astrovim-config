@@ -86,15 +86,6 @@ return function(mappings)
         desc = "Normal Vim Mode",
       },
 
-      ["<leader>="] = {
-        "zR",
-        desc = "Open all folds",
-      },
-      ["<leader>-"] = {
-        "zM",
-        desc = "Close all folds",
-      },
-
       -- Harpoon
       ["<leader>1"] = { function() require("harpoon.ui").nav_file(1) end, desc = "Goto mark 1" },
       ["<leader>2"] = { function() require("harpoon.ui").nav_file(2) end, desc = "Goto mark 2" },

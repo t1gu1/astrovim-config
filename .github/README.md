@@ -1,12 +1,16 @@
 # The Real Catppuccin - AstroNvim User Configuration for React, Typescipt || Javascript
 
-P.S. My terminal is now transparent with the last Kitty config. (I dont test it without transparent terminal)
+<img width="1296" alt="nvim dashboard" src="https://github.com/t1gu1/astrovim-config/assets/12479055/d1c4d79b-daac-48f6-ad31-1b8f95bf957b">
 
-![image](https://github.com/t1gu1/astrovim-config/assets/12479055/bf213f82-8e93-472d-baf5-f10e50803c95)
+<img width="1728" alt="nvim code" src="https://github.com/t1gu1/astrovim-config/assets/12479055/e0b56443-e1ad-45a5-8767-069dcfb84567">
+
+<img width="1728" alt="Oil" src="https://github.com/t1gu1/astrovim-config/assets/12479055/dedd0fd3-7846-412b-bcb8-a5e01c5afefb">
 
 P.S. Bufferline/Heirline are now removed to get the fully `ThePrimeagen/harpoon` experience.
-![image](https://github.com/t1gu1/astrovim-config/assets/12479055/a4a02c23-1263-4dca-be9d-65439be60a1b)
-![image](https://github.com/t1gu1/astrovim-config/assets/12479055/3a09fafe-f43d-4da0-adb8-34a578c71993)
+<img width="1728" alt="Nvim Herline" src="https://github.com/t1gu1/astrovim-config/assets/12479055/1a75a7c9-c17f-4820-9eb1-ffe668ef6e83">
+
+<img width="1728" alt="Nvim Find file - Telescope" src="https://github.com/t1gu1/astrovim-config/assets/12479055/31a040ce-ad41-47b5-942e-6d89d3b4916c">
+
 
 ## Features / What I added or change from AstroVim
 
@@ -52,10 +56,11 @@ P.S. Bufferline/Heirline are now removed to get the fully `ThePrimeagen/harpoon`
 - AstroVim key mappings: <https://astronvim.com/Basic%20Usage/mappings> (Not listed in the things below)
 - ~~In the NeoTree press `?` to see all mapping~~
 - In Oil, press `?` to see all mapping (Not that much cause it works like buffer)
-  - `<leader>e` open current file directory
+  - `<leader>e` open current file directory (Do it again to go to parent directory)
   - `<leader>E` open root project (Be sure to have .git or something that project.nvim will be able to understand as project)
   - To move a file simply delete the file and paste it somewhere else. Then save in oil and it will tell you if you really want to move the file. (Really intuitive)
   - To edit a file name, simply edit it as a buffer then save in oil. Oil will ask if you really want to rename your file.
+  - In Oil, press `b` to go to parent directory
 - In the editor simply hit `space/leader` and wait 1s to see almost all maping
 - If you want to add Project, open the project window (Accessible through Dashboard too) and then do one of these shorcuts: <https://github.com/AstroNvim/astrocommunity/tree/main/lua/astrocommunity/project/projectmgr-nvim>
 
@@ -74,9 +79,6 @@ P.S. Bufferline/Heirline are now removed to get the fully `ThePrimeagen/harpoon`
 
 - `harpoon` `<leader><leader>a` to mark a file.
 - Use `<leader>` follow by a number (`1` **to** `5`) to quick move between the 5 first marks.
-
-Here an example of what it looks:
-![image](https://github.com/t1gu1/astrovim-config/assets/12479055/db602e66-6df3-4eea-a894-fd1ad3f025f9)
 
 P.S. I REMOVE completly the buffeline/Heirline to fully use `ThePrimeagen/harpoo` experience.
 
@@ -147,7 +149,7 @@ Simply replace all your config by this:
 # Remove window header of your OS (You may not want this line)
 hide_window_decorations titlebar-only
 
-# Make the terminal transparent with some blur (Works nicely on Mac OS and maybe Linux)
+# Make the terminal TRANSPARENT with some blur (Works nicely on Mac OS and maybe Linux)
 background_opacity 0.8
 background_blur 20
 

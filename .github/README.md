@@ -146,6 +146,9 @@ Simply replace all your config by this:
 ```shell
 ## blurb:    Soothing pastel theme for the high-spirited!
 
+# Kitty tabs are now define by a number
+tab_title_template "{index}"
+
 # Remove window header of your OS (You may not want this line)
 hide_window_decorations titlebar-only
 

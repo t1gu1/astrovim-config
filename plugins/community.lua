@@ -24,7 +24,9 @@ return {
   {
     "nvim-lualine/lualine.nvim",
     opts = function(_, opts)
-      opts.sections = {
+      opts.winbar = {
+        lualine_a = { "mode" },
+        lualine_b = { "branch", "diff", "diagnostics" },
         lualine_c = {
           {
             "filename",
@@ -36,23 +38,25 @@ return {
             shorting_target = 40, -- Shortens path to leave 40 spaces in the window
             -- for other components. (terrible name, any suggestions?)
             symbols = {
-              modified = " ●", -- Text to show when the file is modified.
-              readonly = "[Read Only]", -- Text to show when the file is non-modifiable or readonly.
-              unnamed = "[No Name]", -- Text to show for unnamed buffers.
-              newfile = "[New]", -- Text to show for newly created file before first write
+              modified = "", -- Text to show when the file is modified.
+              readonly = "", -- Text to show when the file is non-modifiable or readonly.
+              unnamed = "", -- Text to show for unnamed buffers.
+              newfile = "", -- Text to show for newly created file before first write
               directory = "",
+              oil = "",
             },
 
             filetype_names = {
-              TelescopePrompt = "Telescope",
+              TelescopePrompt = "Telescope ",
               dashboard = "Dashboard",
               packer = "Packer",
               fzf = "FZF",
-              alpha = "Alpha",
+              alpha = "Dashboard",
+              oil = "",
             },
           },
         },
-
+        lualine_x = { "encoding", "fileformat", "filetype" },
         lualine_y = {
           { "progress" },
           {
@@ -61,7 +65,21 @@ return {
             timeout = 500,
           },
         },
+        lualine_z = { "location" },
       }
+
+      opts.inactive_winbar = {
+        lualine_a = opts.winbar.lualine_a,
+        lualine_b = opts.winbar.lualine_b,
+        lualine_c = opts.winbar.lualine_c,
+        lualine_x = {},
+        lualine_y = {},
+        lualine_z = {},
+      }
+
+      opts.sections = {}
+      opts.inactive_sections = {}
+
       return opts
     end,
   },

@@ -56,7 +56,6 @@ return function(mappings)
         "<cmd>MoveLine(1)<CR>",
         desc = "Move line down",
       },
-      -- Here, i'm not able to overwrite the Default Mappings.
       ["K"] = {
         "<cmd>MoveLine(-1)<CR>",
         desc = "Move line up",
@@ -92,7 +91,8 @@ return function(mappings)
       ["<leader>3"] = { function() require("harpoon.ui").nav_file(3) end, desc = "Goto mark 3" },
       ["<leader>4"] = { function() require("harpoon.ui").nav_file(4) end, desc = "Goto mark 4" },
       ["<leader>5"] = { function() require("harpoon.ui").nav_file(5) end, desc = "Goto mark 5" },
-      ["leader>6"] = { function() require("harpoon.ui").nav_file(6) end, desc = "Goto mark 6" },
+      ["<leader>6"] = { function() require("harpoon.ui").nav_file(6) end, desc = "Goto mark 6" },
+      ["<leader>7"] = { function() require("harpoon.ui").nav_file(6) end, desc = "Goto mark 6" },
     },
     t = {
       ["<C-t>"] = {

@@ -22,6 +22,11 @@ return {
   { import = "astrocommunity.bars-and-lines/lualine-nvim" },
 
   {
+    "jay-babu/project.nvim",
+    opts = function(_, opts) opts.patterns = { ".git", "_darcs", ".hg", ".bzr", ".svn", "Makefile" } end,
+  },
+
+  {
     "nvim-lualine/lualine.nvim",
     opts = function(_, opts)
       opts.winbar = {

@@ -9,7 +9,6 @@ return {
   { import = "astrocommunity.colorscheme.catppuccin", enabled = true },
   { import = "astrocommunity.project/project-nvim" },
   { import = "astrocommunity.motion/harpoon" },
-  { import = "astrocommunity.media/presence-nvim" },
   { import = "astrocommunity.project/nvim-spectre" },
   { import = "astrocommunity.editing-support/todo-comments-nvim" },
   { import = "astrocommunity.motion/nvim-surround" },

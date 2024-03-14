@@ -16,6 +16,7 @@ return {
       "regex",
       "bash",
       "lua",
+      "astro",
     })
   end,
 }

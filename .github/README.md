@@ -1,3 +1,6 @@
+!!! I switch to nvChad with my nice touch: (My NvChad config)[https://github.com/t1gu1/nvchad/tree/main] !!!
+So i'll stop to update that repo.
+
 # The Real Catppuccin - AstroNvim User Configuration for React, Typescipt || Javascript
 
 <img width="1296" alt="nvim dashboard" src="https://github.com/t1gu1/astrovim-config/assets/12479055/d1c4d79b-daac-48f6-ad31-1b8f95bf957b">

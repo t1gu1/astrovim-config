@@ -1,4 +1,4 @@
-!!! I switch to nvChad with my nice touch: [My NvChad config](https://github.com/t1gu1/nvchad/tree/main) !!!
+# !!! I switch to nvChad with my nice touch: [My NvChad config](https://github.com/t1gu1/nvchad/tree/main) !!!
 
 So i'll stop to update that repo.
 
